@@ -12,6 +12,8 @@
 
 1. **Updated SRS and HRS**
 
+Additions in **bold**, deletions ~~crossed out~~.
+
 ### HRS
 
 **General**
@@ -23,9 +25,9 @@
 | HRS-G-03 | The project shall use the SAMD21 MCU to connect to a GPS, IMU, Temp/Humidity sensor, and ADCs. | |
 | HRS-G-04 | The project shall use a battery of at least 4V that can power the MCU and electronics for an average of 5 hours. | |
 | HRS-G-05 | The project shall have an on/off button to power the entire system. | |
-| HRS-G-06 | The project shall use a boost converter to step-up the battery voltage to 12V to power the stepper motor driver. | |
-| HRS-G-07 | The project shall use a boost converter to step-up the battery voltage to 5V to power the servo motor. | |
-| HRS-G-08 | The project shall use a buck converter to step-down the battery voltage to 3.3V to power the MCU, GPS, temp/humidity, IMU, and other logic level high signals. | |
+| HRS-G-06 | The project shall use a boost converter to step-up the battery voltage **to 12V** to power the stepper motor driver. | |
+| HRS-G-07 | The project shall use a boost converter to step-up the battery voltage **to 5V** to power the servo motor. | |
+| HRS-G-08 | The project shall use a buck converter to step-down the battery voltage **to 3.3V** to power the MCU, **GPS, temp/humidity, IMU, and other logic level high signals**. | |
 
 **Sensors**
 
@@ -38,7 +40,7 @@
 | HRS-S-04 | The GPS should provide latitude and longitude values correct to 3 decimal points. | |
 | HRS-S-05 | The MCU shall communicate with the IMU and temp/humidity sensor over I2C.  | |
 | HRS-S-06 | The system should combine all I2C peripherals on one I2C bus.  | |
-| HRS-S-07 | The MCU shall communicate with the GPS over UART.  | |
+| **HRS-S-07** | **The MCU shall communicate with the GPS over UART.**  | |
 
 **Solar Tracking**
 
@@ -56,7 +58,15 @@
 
 | # | Requirement specification | Status |
 | --------- | -------- | -------- |
-| HRS-W-01 | The WINC1500 will be used to send data packets containing sensor data (GPS coordinates, temperature, humidity, solar tracker charge) to the Node-red UI to be displayed. | |
+| HRS-W-01 | The WINC1500 will be used to send data packets containing ~~sensor~~ **peripheral** data (GPS coordinates, temperature, humidity, **tilt status**, solar tracker charge, **motor position**) to the Node-red UI to be displayed. | |
+
+**Motor Control (Will likely drop this feature)**
+
+| # | Requirement specification | Status |
+| --------- | -------- | -------- |
+| ~~HRS-M-03~~ | ~~The prototype shall have 4 wheel drive.~~ | |
+| ~~HRS-M-04~~ | ~~The controller shall have 2 joysticks to control the rover. One joystick will control the left pair of wheels, the other will control the right.~~ | |
+| ~~HRS-M-05~~ | ~~The motors shall be chosen to give the car a top speed of at least 10mph.~~ | |
 
 ### SRS
 
@@ -91,7 +101,7 @@
 | SRS-NR-03 | The display panel shall report the temperature in Celsius. | |
 | SRS-NR-04 | The display panel shall report the relative humidity as a percentage. | |
 | SRS-NR-05 | The display panel shall display the GPS latitude and longitude correct to a tenth of a degree. | |
-| SRS-NR-06 | The system shall use Google Maps API to show the real-time position of the rover on a map interface. | |
+| SRS-NR-06 | The system ~~shall~~ **should** use Google Maps API to show the real-time position of the rover on a map interface. | |
 | SRS-NR-07 | The display panel shall have an LED that changes color based on the battery voltage level. These levels will be high (green), medium (yellow), and low (red). | |
 | SRS-NR-08 | The UI should update sensor values at least once every second. | |
 | SRS-NR-09 | The system shall display the solar tracking status on the UI. | |
