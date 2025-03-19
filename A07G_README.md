@@ -44,9 +44,9 @@
 
 | # | Requirement specification | Status |
 | --------- | -------- | -------- |
-| HRS-ST-01 | The system shall incorporate a solar cell to collect and store energy into a rechargeable battery. | |
+| ~~HRS-ST-01~~ | ~~The system shall incorporate a solar cell to collect and store energy into a rechargeable battery.~~ | |
 | HRS-ST-02 | The system shall use an ADC to monitor the voltage of the solar cell. | |
-| HRS-ST-03 | The system should use a diode to prevent reverse current from the battery to the solar cell. | |
+| ~~HRS-ST-03~~ | ~~The system should use a diode to prevent reverse current from the battery to the solar cell.~~ | |
 | HRS-ST-04 | The system shall use a stepper motor to actuate solar cells 360 degrees around the y-axis in 10 degree increments. It will be controlled using a driver. | |
 | HRS-ST-05 | The system shall use a servo motor to actuate solar cells 180 degrees around the z-axis in 10 degree increments. | |
 | HRS-ST-06 | The system shall use a potentiometer to vary the load in the solar tracking circuit, which will be used in the MPPT process. | |
@@ -111,9 +111,15 @@
 
 1. What does “InitializeSerialConsole()” do? In said function, what is “cbufRx” and “cbufTx”? What type of data structure is it?
 
+InitializeSerialConsole() initializes the datastructures and USART communicaiton.
+
 2. How are “cbufRx” and “cbufTx” initialized? Where is the library that defines them (please list the *C file they come from).
 
+They are initalized as char arrays. They are defined in SerialConsole.c as circular buffers outlined in circular_buffer.h.
+
 3. Where are the character arrays where the RX and TX characters are being stored at the end? Please mention their name and size. Tip: Please note cBufRx and cBufTx are structures.
+
+
 
 4. Where are the interrupts for UART character received and UART character sent defined? 
 
