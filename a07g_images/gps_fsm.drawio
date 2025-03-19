@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
+  <diagram name="Page-1" id="CNBYbqSdpm3Rv6KRjSIh">
+    <mxGraphModel dx="941" dy="491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="115" y="80" width="655" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-2" value="" style="shape=ellipse;fillColor=#000000;strokeColor=none;html=1;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="190" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="170" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="efYyS_SKhE4xRy7ca1jR-2" target="efYyS_SKhE4xRy7ca1jR-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="300" as="sourcePoint" />
+            <mxPoint x="460" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-5" value="GPS_INIT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="245" y="220" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-6" value="START" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="145" y="200" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-7" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="440" y="170" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="efYyS_SKhE4xRy7ca1jR-3" target="efYyS_SKhE4xRy7ca1jR-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="300" as="sourcePoint" />
+            <mxPoint x="460" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-9" value="Finished calibration,&lt;div&gt;acquired semaphore&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="efYyS_SKhE4xRy7ca1jR-8">
+          <mxGeometry x="-0.2714" y="1" relative="1" as="geometry">
+            <mxPoint x="9" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-10" value="GPS_READ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="220" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-11" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="640" y="170" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="efYyS_SKhE4xRy7ca1jR-7" target="efYyS_SKhE4xRy7ca1jR-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="300" as="sourcePoint" />
+            <mxPoint x="460" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-13" value="Distance is &amp;gt; 10,&lt;div&gt;release semaphore&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="efYyS_SKhE4xRy7ca1jR-12">
+          <mxGeometry x="-0.2063" y="-1" relative="1" as="geometry">
+            <mxPoint x="12" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="efYyS_SKhE4xRy7ca1jR-11" target="efYyS_SKhE4xRy7ca1jR-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="300" as="sourcePoint" />
+            <mxPoint x="460" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-15" value="Solar tracking done,&lt;div&gt;acquire semaphore&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="efYyS_SKhE4xRy7ca1jR-14">
+          <mxGeometry x="0.2256" y="-1" relative="1" as="geometry">
+            <mxPoint x="24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-16" value="GPS_IDLE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="625" y="220" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.789;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.204;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="efYyS_SKhE4xRy7ca1jR-7" target="efYyS_SKhE4xRy7ca1jR-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="300" as="sourcePoint" />
+            <mxPoint x="400" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="140" />
+              <mxPoint x="450" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-18" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Distance is &amp;lt; 10m,&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;keep reading GPS value&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="395" y="100" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.789;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.204;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="679" y="175" as="sourcePoint" />
+            <mxPoint x="650" y="174" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="140" />
+              <mxPoint x="650" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-20" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Waiting for solar tracking&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;to end&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="595" y="105" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="efYyS_SKhE4xRy7ca1jR-21" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;GPS TASK&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

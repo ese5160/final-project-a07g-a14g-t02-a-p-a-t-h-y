@@ -103,6 +103,10 @@
 
 3. **Task State Machines**
 
+![Solar Tracking Task](a07g_images/solar_fsm.png)
+
+![GPS Task](a07g_images/gps_fsm.png)
+
 ## 2. Understanding the Starter Code
 
 1. What does “InitializeSerialConsole()” do? In said function, what is “cbufRx” and “cbufTx”? What type of data structure is it?
