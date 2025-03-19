@@ -1,76 +1,76 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
   <diagram name="Page-1" id="Fqm5-C3YIYAy38oy0enU">
-    <mxGraphModel dx="784" dy="409" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="941" dy="491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-29" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-29" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
           <mxGeometry x="115" y="80" width="655" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-1" value="" style="shape=ellipse;fillColor=#000000;strokeColor=none;html=1;sketch=0;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-1" value="" style="shape=ellipse;fillColor=#000000;strokeColor=none;html=1;sketch=0;" parent="1" vertex="1">
           <mxGeometry x="170" y="190" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="260" y="170" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GDAMBFOTE-VzpJDutDlz-1" target="GDAMBFOTE-VzpJDutDlz-3">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="GDAMBFOTE-VzpJDutDlz-1" target="GDAMBFOTE-VzpJDutDlz-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="410" y="300" as="sourcePoint" />
             <mxPoint x="460" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-6" value="SOL_INIT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-6" value="SOL_INIT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="245" y="220" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-7" value="START" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-7" value="START" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="145" y="200" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-8" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-8" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="440" y="170" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GDAMBFOTE-VzpJDutDlz-3" target="GDAMBFOTE-VzpJDutDlz-8">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="GDAMBFOTE-VzpJDutDlz-3" target="GDAMBFOTE-VzpJDutDlz-8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="410" y="300" as="sourcePoint" />
             <mxPoint x="460" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-10" value="Calibration done" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GDAMBFOTE-VzpJDutDlz-9">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-10" value="Initialization done" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GDAMBFOTE-VzpJDutDlz-9" vertex="1" connectable="0">
           <mxGeometry x="-0.2714" y="1" relative="1" as="geometry">
             <mxPoint x="9" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-11" value="SOL_IDLE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-11" value="SOL_IDLE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="425" y="220" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-12" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-12" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="640" y="170" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="GDAMBFOTE-VzpJDutDlz-8" target="GDAMBFOTE-VzpJDutDlz-12">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="1" source="GDAMBFOTE-VzpJDutDlz-8" target="GDAMBFOTE-VzpJDutDlz-12" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="410" y="300" as="sourcePoint" />
             <mxPoint x="460" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-18" value="Semaphore acquired&lt;div&gt;from GPS&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GDAMBFOTE-VzpJDutDlz-16">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-18" value="Mutex acquired&lt;div&gt;from GPS&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GDAMBFOTE-VzpJDutDlz-16" vertex="1" connectable="0">
           <mxGeometry x="-0.2063" y="-1" relative="1" as="geometry">
             <mxPoint x="12" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GDAMBFOTE-VzpJDutDlz-12" target="GDAMBFOTE-VzpJDutDlz-8">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GDAMBFOTE-VzpJDutDlz-12" target="GDAMBFOTE-VzpJDutDlz-8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="410" y="300" as="sourcePoint" />
             <mxPoint x="460" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-20" value="Tracking done,&lt;div&gt;semaphore released&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GDAMBFOTE-VzpJDutDlz-19">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-20" value="Tracking done,&lt;div&gt;mutex released&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GDAMBFOTE-VzpJDutDlz-19" vertex="1" connectable="0">
           <mxGeometry x="0.2256" y="-1" relative="1" as="geometry">
             <mxPoint x="24" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-21" value="SOL_TRACKING" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-21" value="SOL_TRACKING" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="605" y="220" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.789;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.204;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GDAMBFOTE-VzpJDutDlz-8" target="GDAMBFOTE-VzpJDutDlz-8">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.789;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.204;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="GDAMBFOTE-VzpJDutDlz-8" target="GDAMBFOTE-VzpJDutDlz-8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="410" y="300" as="sourcePoint" />
             <mxPoint x="400" y="110" as="targetPoint" />
@@ -80,10 +80,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-24" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Semaphore&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;not available&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-24" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Mutex&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;not available&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="420" y="100" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.789;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.204;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.789;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.204;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="679" y="175" as="sourcePoint" />
             <mxPoint x="650" y="174" as="targetPoint" />
@@ -93,10 +93,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-26" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Tracking in progress&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-26" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Tracking in progress&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="605" y="110" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GDAMBFOTE-VzpJDutDlz-28" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;SOLAR TRACKING TASK&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="GDAMBFOTE-VzpJDutDlz-28" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;SOLAR TRACKING TASK&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="120" y="80" width="260" height="40" as="geometry" />
         </mxCell>
       </root>
