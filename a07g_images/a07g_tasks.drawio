@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.0.16">
+  <diagram name="Page-1" id="Ie_a2-sc57kRKrSM1Xpx">
+    <mxGraphModel dx="1194" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-1" value="System Control Task" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="390" y="260" width="125" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="80" width="130" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-4" value="Solar Tracking Task" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="50" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-5" value="Stepper Motor Driver" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="110" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-6" value="Servo Motor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="170" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-7" value="Solar Cell ADC" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="230" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-9" value="Temperature &amp;amp;&lt;div&gt;Humidity&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Task&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="295" y="45" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-10" value="Temp/Humidity Sensor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="110" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-13" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="80" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-14" value="IMU Task" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="50" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-15" value="IMU" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="110" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-16" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="80" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-17" value="GPS Task" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="685" y="50" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-18" value="GPS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="675" y="110" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-19" value="WiFi Task" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="450" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-22" value="CLI Task" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="450" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A31ABvEfGWIdzAUm42GZ-8" target="A31ABvEfGWIdzAUm42GZ-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-27" value="- Temperature&lt;div&gt;- Humidity&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A31ABvEfGWIdzAUm42GZ-26">
+          <mxGeometry x="-0.142" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="A31ABvEfGWIdzAUm42GZ-13" target="A31ABvEfGWIdzAUm42GZ-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-29" value="- 3D Acceleration&lt;div&gt;- 3D Gyration&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A31ABvEfGWIdzAUm42GZ-28">
+          <mxGeometry x="-0.0589" y="3" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="A31ABvEfGWIdzAUm42GZ-16" target="A31ABvEfGWIdzAUm42GZ-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="700" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-32" value="- Latitude&lt;div&gt;- Longitude&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A31ABvEfGWIdzAUm42GZ-30">
+          <mxGeometry x="-0.0032" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="A31ABvEfGWIdzAUm42GZ-3" target="A31ABvEfGWIdzAUm42GZ-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-34" value="- Solar Tracking status&lt;div&gt;- Battery charge status&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A31ABvEfGWIdzAUm42GZ-33">
+          <mxGeometry x="-0.0213" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="A31ABvEfGWIdzAUm42GZ-19" target="A31ABvEfGWIdzAUm42GZ-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-37" value="User Control&lt;div&gt;Info&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A31ABvEfGWIdzAUm42GZ-35">
+          <mxGeometry x="0.0675" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-36" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="446.25" y="385" as="sourcePoint" />
+            <mxPoint x="350" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A31ABvEfGWIdzAUm42GZ-38" value="System&lt;div&gt;Info&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A31ABvEfGWIdzAUm42GZ-36">
+          <mxGeometry x="-0.0744" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -12,7 +12,94 @@
 
 1. **Updated SRS and HRS**
 
+### HRS
+
+**General**
+
+| # | Requirement specification | Status |
+| --------- | -------- | -------- |
+| HRS-G-01 | The project shall use a SAMW25 as the central module. | |
+| HRS-G-02 | The project shall use the WINC1500 to communicate with Node-red over Wi-Fi. | |
+| HRS-G-03 | The project shall use the SAMD21 MCU to connect to a GPS, IMU, Temp/Humidity sensor, and ADCs. | |
+| HRS-G-04 | The project shall use a battery of at least 4V that can power the MCU and electronics for an average of 5 hours. | |
+| HRS-G-05 | The project shall have an on/off button to power the entire system. | |
+| HRS-G-06 | The project shall use a boost converter to step-up the battery voltage to 12V to power the stepper motor driver. | |
+| HRS-G-07 | The project shall use a boost converter to step-up the battery voltage to 5V to power the servo motor. | |
+| HRS-G-08 | The project shall use a buck converter to step-down the battery voltage to 3.3V to power the MCU, GPS, temp/humidity, IMU, and other logic level high signals. | |
+
+**Sensors**
+
+| # | Requirement specification | Status |
+| --------- | -------- | -------- |
+| HRS-S-01 | The system shall use a temperature sensor to provide Celsius readings correct to a tenth of a degree. | |
+| HRS-S-02 | The system shall use a humidity sensor to provide surrounding humidity readings as a percentage correct to 3SF. | |
+| HRS-S-03 | The system shall use an IMU accelerometer and gyroscope to collect 3-dimensional readings with an accuracy of .5G and .1 deg/s respectively. | |
+| HRS-S-04 | The system shall use a GPS to provide the rover's location correct to 10 meters. | |
+| HRS-S-04 | The GPS should provide latitude and longitude values correct to 3 decimal points. | |
+| HRS-S-05 | The MCU shall communicate with the IMU and temp/humidity sensor over I2C.  | |
+| HRS-S-06 | The system should combine all I2C peripherals on one I2C bus.  | |
+| HRS-S-07 | The MCU shall communicate with the GPS over UART.  | |
+
+**Solar Tracking**
+
+| # | Requirement specification | Status |
+| --------- | -------- | -------- |
+| HRS-ST-01 | The system shall incorporate a solar cell to collect and store energy into a rechargeable battery. | |
+| HRS-ST-02 | The system shall use an ADC to monitor the voltage of the solar cell. | |
+| HRS-ST-03 | The system should use a diode to prevent reverse current from the battery to the solar cell. | |
+| HRS-ST-04 | The system shall use a stepper motor to actuate solar cells 360 degrees around the y-axis in 10 degree increments. It will be controlled using a driver. | |
+| HRS-ST-05 | The system shall use a servo motor to actuate solar cells 180 degrees around the z-axis in 10 degree increments. | |
+| HRS-ST-06 | The system shall use a potentiometer to vary the load in the solar tracking circuit, which will be used in the MPPT process. | |
+| HRS-ST-07 | The system shall use a MOSFET to complete the circuit from the solar cell to rechargeable battery after the ideal resistance is determined. | |
+
+**Wireless**
+
+| # | Requirement specification | Status |
+| --------- | -------- | -------- |
+| HRS-W-01 | The WINC1500 will be used to send data packets containing sensor data (GPS coordinates, temperature, humidity, solar tracker charge) to the Node-red UI to be displayed. | |
+
+### SRS
+
+**Sensors**
+
+| # | Requirement specification | Status |
+| --------- | -------- | -------- |
+| SRS-S-01 | The system shall pull temperature and humidity data at a speed of 2Hz. | |
+| SRS-S-02 | The system shall collect longitude and latitude values from the GPS at a speed of 2Hz and will be correct to .1 deg. | |
+| SRS-S-03 | A calibration routine shall be run after initial start-up to identify the rest state of IMU. | |
+| SRS-S-04 | Acceleration and gyration data will be collected from the IMU correct to .5G and .1 deg/s at a speed of 2Hz and further processing will be used to determine whether the rover has fallen over or not. | |
+| SRS-S-05 | The system should apply the Haversine formula to the latitude and longitude values every 10 seconds to determine when the rover has moved at least 10 meters for solar tracking. | |
+
+**Solar Tracking**
+
+| # | Requirement specification | Status |
+| --------- | -------- | -------- |
+| SRS-ST-01 | The system should have a solar-tracking mode that is activated when the rover has moved at least 10 meters from its previous solar tracking point. | |
+| SRS-ST-02 | The system shall determine the solar cell orientation and load for optimal charging within 1 minute. | |
+| SRS-ST-03 | The solar tracking system shall read ADC data to determine the voltage of each solar cell orientation in the y and z-axis. | |
+| SRS-ST-04 | The firmware shall determine the maximum ADC reading in the y-direction and fix the corresponding stepper postion. | |
+| SRS-ST-05 | The firmware shall determine the maximum ADC reading in the z-direction and fix the corresponding servo postion. | |
+| SRS-ST-06 | The system shall fix the orientation of the solar cell and use the Maximum Power Point Tracking (MPPT) technique to identify load value for optimal battery charging. | |
+| SRS-ST-07 | The system should compute the battery's state of charge. | |
+
+**Node-red UI**
+
+| # | Requirement specification | Status |
+| --------- | -------- | -------- |
+| SRS-NR-01 | The project shall have a Node-red UI. | |
+| SRS-NR-02 | The UI shall have a display panel that shows the status of the rover's tilt. This value will either be "steady" or "toppled over". | |
+| SRS-NR-03 | The display panel shall report the temperature in Celsius. | |
+| SRS-NR-04 | The display panel shall report the relative humidity as a percentage. | |
+| SRS-NR-05 | The display panel shall display the GPS latitude and longitude correct to a tenth of a degree. | |
+| SRS-NR-06 | The system shall use Google Maps API to show the real-time position of the rover on a map interface. | |
+| SRS-NR-07 | The display panel shall have an LED that changes color based on the battery voltage level. These levels will be high (green), medium (yellow), and low (red). | |
+| SRS-NR-08 | The UI should update sensor values at least once every second. | |
+| SRS-NR-09 | The system shall display the solar tracking status on the UI. | |
+| SRS-NR-10 | Solar tracking status strings should include "Determining orientation...", "Computing load...", "Optimal charging achieved." | |
+
 2. **Task Block Diagram**
+
+![Task Block Diagram](a07g_images/a07g_tasks.png)
 
 3. **Task State Machines**
 
