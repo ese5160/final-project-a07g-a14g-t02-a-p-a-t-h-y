@@ -156,10 +156,10 @@ void LogMessage(enum eDebugLogLevels level, const char *format, ...)
 
 	if (level >= currentDebugLevel) {
 		va_list message;
-		va_start(message, level);
+		va_start(message, format);
 
 		char buffer[200];
-		vsprintf(buffer, "%s", message);
+		vsprintf(buffer, format, message);
 		va_end(message);
 
 		SerialConsoleWriteString(buffer);
