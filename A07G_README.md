@@ -125,21 +125,28 @@ InitializeSerialConsole() initializes the USART communication, defines the data 
 
 2. How are “cbufRx” and “cbufTx” initialized? Where is the library that defines them (please list the *C file they come from).
 
-They are initalized as char arrays using the circular_buf_init() function. They are defined in SerialConsole.c as circular buffers outlined in circular_buffer.h.
+They are initalized as circular buffer pointers. This is initialized in SerialConsole.c, and the circular buffers is implemented in circular_buffer.c.
 
 3. Where are the character arrays where the RX and TX characters are being stored at the end? Please mention their name and size. Tip: Please note cBufRx and cBufTx are structures.
 
-
+Ultimately, the data is being stored in a char array called rxCharacterBuffer and txCharacterBuffer which both have a size of 512 bytes. This data structure is passed to the circular buffer structure in circular_buf_init.
 
 4. Where are the interrupts for UART character received and UART character sent defined? 
+
+The interrupts are handeled usart_interrupt.c. The callback functions are implemented in SerialConsole.c as usart_write_callback() and usart_read_callback. They are linked through the usart_module type thats initialized as usart_instance in SerialConsole.c.
+
 
 5. What are the callback functions that are called when:
 
 - A character is received? (RX) 
+usart_read_callback()
 
 - A character has been sent? (TX) 
+usart_write_callback()
 
 6. Explain what is being done on each of these two callbacks and how they relate to the cbufRx and cbufTx buffers. 
+
+In the usart_write_callback() function, a single char is being passed from the cbufTx buffer to a data strcuture inside of the usart structure. In the usart_read_callback() function, the cbufRx buffer is linked to a data strcuture inside of the usart structure so that it can pass cbufRx the incoming data. 
 
 7. Draw a diagram that explains the program flow for UART receive – starting with the user typing a character and ending with how that characters ends up in the circular buffer “cbufRx”. Please make reference to specific functions in the starter code. 
 
