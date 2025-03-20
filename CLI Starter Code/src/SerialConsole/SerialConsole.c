@@ -156,7 +156,7 @@ void LogMessage(enum eDebugLogLevels level, const char *format, ...)
 
 	if (level >= currentDebugLevel) {
 		va_list message;
-		var_start(message, level);
+		va_start(message, level);
 
 		char buffer[200];
 		vsprintf(buffer, "%s", message);
