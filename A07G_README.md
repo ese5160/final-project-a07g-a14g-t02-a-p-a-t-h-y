@@ -121,11 +121,11 @@ Additions in **bold**, deletions ~~crossed out~~.
 
 1. What does “InitializeSerialConsole()” do? In said function, what is “cbufRx” and “cbufTx”? What type of data structure is it?
 
-InitializeSerialConsole() initializes the datastructures and USART communicaiton.
+InitializeSerialConsole() initializes the USART communication, defines the data structures for RX and TX, and starts to read characters. “cbufRx” and “cbufTx” are the ring buffers that contain data coming from and going to the console respectively. They are buffer handles for the circular_buf_t struct.
 
 2. How are “cbufRx” and “cbufTx” initialized? Where is the library that defines them (please list the *C file they come from).
 
-They are initalized as char arrays. They are defined in SerialConsole.c as circular buffers outlined in circular_buffer.h.
+They are initalized as char arrays using the circular_buf_init() function. They are defined in SerialConsole.c as circular buffers outlined in circular_buffer.h.
 
 3. Where are the character arrays where the RX and TX characters are being stored at the end? Please mention their name and size. Tip: Please note cBufRx and cBufTx are structures.
 
