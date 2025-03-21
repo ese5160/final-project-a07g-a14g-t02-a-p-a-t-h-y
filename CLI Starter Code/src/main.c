@@ -57,7 +57,7 @@ volatile uint8_t rx_buffer[MAX_RX_BUFFER_LENGTH];
 
 volatile char buffer[7];
 
-extern SemaphoreHandle_t uartSemaphore;
+extern SemaphoreHandle_t uartSemaphore = NULL;
 
 int main(void)
 {

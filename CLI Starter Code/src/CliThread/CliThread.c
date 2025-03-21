@@ -221,7 +221,9 @@ static void FreeRTOS_read(char *character)
     // vTaskSuspend(NULL); // We suspend ourselves. Please remove this when doing your code
 
     if (xSemaphoreTake(uartSemaphore, portMAX_DELAY) == pdTRUE) {
+		vTaskSuspendAll();
         circular_buf_get(cbufRx, character);
+		xTaskResumeAll();
     }
 }
 

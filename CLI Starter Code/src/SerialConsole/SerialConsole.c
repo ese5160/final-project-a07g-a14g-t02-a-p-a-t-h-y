@@ -231,12 +231,16 @@ static void configure_usart_callbacks(void)
  *****************************************************************************/
 void usart_read_callback(struct usart_module *const usart_module)
 {
-	// ToDo: Complete this function 
+	// ToDo: Complete this function
+	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+	 
 	circular_buf_put(cbufRx, latestRx);
 
 	usart_read_buffer_job(&usart_instance, (uint8_t *)&latestRx, 1);
 
-	xSemaphoreGiveFromISR(uartSemaphore, NULL);
+	xSemaphoreGiveFromISR(uartSemaphore, &xHigherPriorityTaskWoken);
+	
+	portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
 }
 
 /**************************************************************************/ 
