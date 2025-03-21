@@ -146,7 +146,7 @@ usart_write_callback()
 
 6. Explain what is being done on each of these two callbacks and how they relate to the cbufRx and cbufTx buffers. 
 
-In the usart_write_callback() function, a single char is being passed from the cbufTx buffer to a data strcuture inside of the usart structure. In the usart_read_callback() function, the cbufRx buffer is linked to a data strcuture inside of the usart structure so that it can pass cbufRx the incoming data. 
+In the usart_write_callback() function, a single char is being passed from the cbufTx buffer to a data structure inside of the usart handling structure. In the usart_read_callback() function, the cbufRx buffer is linked to a data strcuture inside of the usart handling structure so that it can pass cbufRx the incoming data. 
 
 7. Draw a diagram that explains the program flow for UART receive – starting with the user typing a character and ending with how that characters ends up in the circular buffer “cbufRx”. Please make reference to specific functions in the starter code. 
 
