@@ -156,19 +156,37 @@ In the usart_write_callback() function, a single char is being passed from the c
 
 ## 3. Debug Logger Module
 
+LogMessage() function in [this file](https://github.com/ese5160/final-project-a07g-a14g-t02-a-p-a-t-h-y/blob/main/CLI%20Starter%20Code/src/SerialConsole/SerialConsole.c).
+
 ## 4. Wiretap the convo!
 
 1. What nets must you attach the logic analyzer to? (Check how the firmware sets up the UART in SerialConsole.c!)
 
+We attach to the PB10 and PB11 pins.
+
 2. Where on the circuit board can you attach / solder to?
+
+We can attach/solder to header pins and test points.
 
 3. What are critical settings for the logic analyzer?
 
+The communication type (e.g. Async Serial), channel number, bit rate, bits per frame, stop bits, parity bits, significant bit, signal inversion, and mode. For this question, the two critical settings were the communication type and the bit rate.
+
 ### Hardware connections
 
-### Decoded message
+![Hardware Connections Top View](a07g_images/usart_connections_top.jpg)
+
+![Hardware Connections Side View](a07g_images/usart_connections_side.jpg)
+
+### Decoded message screenshot
+
+![Decoded message screenshot](a07g_images/Salee_Analyzer.png)
 
 ## 5. Complete the CLI
+
+FreeRTOS_read() in [this file](https://github.com/ese5160/final-project-a07g-a14g-t02-a-p-a-t-h-y/blob/main/CLI%20Starter%20Code/src/CliThread/CliThread.c).
+
+usart_read_callback() in [this file](https://github.com/ese5160/final-project-a07g-a14g-t02-a-p-a-t-h-y/blob/main/CLI%20Starter%20Code/src/SerialConsole/SerialConsole.c).
 
 ## 6. Add CLI commands
 
