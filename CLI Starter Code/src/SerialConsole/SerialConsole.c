@@ -236,7 +236,7 @@ void usart_read_callback(struct usart_module *const usart_module)
 
 	usart_read_buffer_job(&usart_instance, (uint8_t *)&latestRx, 1);
 
-	xSemaphoreGiveFromISRO(uartSemaphore, NULL);
+	xSemaphoreGiveFromISR(uartSemaphore, NULL);
 }
 
 /**************************************************************************/ 
