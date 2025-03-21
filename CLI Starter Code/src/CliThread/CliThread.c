@@ -10,6 +10,7 @@
  * Includes
  ******************************************************************************/
 #include "CliThread.h"
+#include "circular_buffer.h"
 
 /******************************************************************************
  * Defines
@@ -217,7 +218,11 @@ void vCommandConsoleTask(void *pvParameters)
 static void FreeRTOS_read(char *character)
 {
     // ToDo: Complete this function
-    vTaskSuspend(NULL); // We suspend ourselves. Please remove this when doing your code
+    // vTaskSuspend(NULL); // We suspend ourselves. Please remove this when doing your code
+
+    if (xSemaphoreTake(uartSemaphore, portMAX_DELAY) == pdTRUE) {
+        circular_buf_get(cbufRx, character);
+    }
 }
 
 /******************************************************************************

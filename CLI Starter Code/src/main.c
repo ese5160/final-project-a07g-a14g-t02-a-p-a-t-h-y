@@ -57,6 +57,8 @@ volatile uint8_t rx_buffer[MAX_RX_BUFFER_LENGTH];
 
 volatile char buffer[7];
 
+extern SemaphoreHandle_t uartSemaphore;
+
 int main(void)
 {
 	// Board Initialization -- Code that initializes the HW and happens only once
@@ -79,6 +81,8 @@ int main(void)
 	 LogMessage(LOG_FATAL_LVL, "Error! Temperature over %d Degrees!\r\n", 55); // This should print
 
 	 LogMessage(LOG_INFO_LVL, "ESE5160 CLI STARTER PROJECT STARTED\r\n");
+
+	 uartSemaphore = xSemaphoreCreateCounting(100, 0 );
 
 	// Start FreeRTOS scheduler.
 	vTaskStartScheduler();
