@@ -182,6 +182,8 @@ The communication type (e.g. Async Serial), channel number, bit rate, bits per f
 
 ![Decoded message screenshot](a07g_images/Salee_Analyzer.png)
 
+Capture file [here](https://github.com/ese5160/final-project-a07g-a14g-t02-a-p-a-t-h-y/blob/main/part_4_capture.sal).
+
 ## 5. Complete the CLI
 
 FreeRTOS_read() in [this file](https://github.com/ese5160/final-project-a07g-a14g-t02-a-p-a-t-h-y/blob/main/CLI%20Starter%20Code/src/CliThread/CliThread.c).
