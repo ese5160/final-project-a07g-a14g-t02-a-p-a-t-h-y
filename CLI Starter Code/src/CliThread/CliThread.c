@@ -36,6 +36,20 @@ static const CLI_Command_Definition_t xResetCommand =
         "reset: Resets the device\r\n",
         (const pdCOMMAND_LINE_CALLBACK)CLI_ResetDevice,
         0};
+		
+static const CLI_Command_Definition_t xVersionCommand =
+{
+	CLI_COMMAND_VERSION,
+	CLI_HELP_VERSION,
+	CLI_CALLBACK_VERSION,
+	CLI_PARAMS_VERSION};
+	
+static const CLI_Command_Definition_t xTicksCommand =
+{
+	CLI_COMMAND_TICKS,
+	CLI_HELP_TICKS,
+	CLI_CALLBACK_TICKS,
+	CLI_PARAMS_TICKS};
 
 /******************************************************************************
  * Forward Declarations
@@ -55,6 +69,8 @@ void vCommandConsoleTask(void *pvParameters)
 
     FreeRTOS_CLIRegisterCommand(&xClearScreen);
     FreeRTOS_CLIRegisterCommand(&xResetCommand);
+	FreeRTOS_CLIRegisterCommand(&xVersionCommand);
+	FreeRTOS_CLIRegisterCommand(&xTicksCommand);
 
     uint8_t cRxedChar[2], cInputIndex = 0;
     BaseType_t xMoreDataToFollow;
@@ -221,9 +237,10 @@ static void FreeRTOS_read(char *character)
     // vTaskSuspend(NULL); // We suspend ourselves. Please remove this when doing your code
 
     if (xSemaphoreTake(uartSemaphore, portMAX_DELAY) == pdTRUE) {
-		vTaskSuspendAll();
+		//vTaskSuspendAll();
         circular_buf_get(cbufRx, (uint8_t *)character);
-		xTaskResumeAll();
+		//xTaskResumeAll();
+		// xSemaphoreGive(uartSemaphore);
     }
 }
 
@@ -248,4 +265,23 @@ BaseType_t CLI_ResetDevice(int8_t *pcWriteBuffer, size_t xWriteBufferLen, const 
 {
     system_reset();
     return pdFALSE;
+}
+
+// Example CLI Command. Resets system.
+BaseType_t xCliVersion(char *pcWriteBuffer,size_t xWriteBufferLen,const int8_t *pcCommandString)
+{
+	char firmware_version[30];
+	
+	snprintf(firmware_version, sizeof(firmware_version), "Firmware Version is: %s\n", VERSION);
+	SerialConsoleWriteString(firmware_version);
+	return pdFALSE;
+}
+
+BaseType_t xCliTicks(char *pcWriteBuffer,size_t xWriteBufferLen,const int8_t *pcCommandString) {
+	char ticks_string[50];
+	long ticks = xTaskGetTickCount() - start_time;
+	
+	snprintf(ticks_string, sizeof(ticks_string), "Ticks since start of scheduler: %ld\n", ticks);
+	SerialConsoleWriteString(ticks_string);
+	return pdFALSE;
 }

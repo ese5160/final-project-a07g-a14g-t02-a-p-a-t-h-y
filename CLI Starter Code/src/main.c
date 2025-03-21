@@ -58,6 +58,7 @@ volatile uint8_t rx_buffer[MAX_RX_BUFFER_LENGTH];
 volatile char buffer[7];
 
 extern SemaphoreHandle_t uartSemaphore = NULL;
+extern long start_time = NULL;
 
 int main(void)
 {
@@ -86,6 +87,9 @@ int main(void)
 
 	// Start FreeRTOS scheduler.
 	vTaskStartScheduler();
+	
+	//
+	start_time = xTaskGetTickCount();
 
 	while (1)
 		;
