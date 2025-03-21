@@ -233,8 +233,8 @@ void usart_read_callback(struct usart_module *const usart_module)
 {
 	// ToDo: Complete this function
 	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
-	 
-	circular_buf_put(cbufRx, latestRx);
+
+	circular_buf_put(cbufRx, (uint8_t *)latestRx);
 
 	usart_read_buffer_job(&usart_instance, (uint8_t *)&latestRx, 1);
 

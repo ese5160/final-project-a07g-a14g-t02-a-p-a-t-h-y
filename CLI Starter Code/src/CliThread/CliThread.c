@@ -222,7 +222,7 @@ static void FreeRTOS_read(char *character)
 
     if (xSemaphoreTake(uartSemaphore, portMAX_DELAY) == pdTRUE) {
 		vTaskSuspendAll();
-        circular_buf_get(cbufRx, character);
+        circular_buf_get(cbufRx, (uint8_t *)character);
 		xTaskResumeAll();
     }
 }
