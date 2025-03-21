@@ -226,9 +226,11 @@ void vCommandConsoleTask(void *pvParameters)
 
 /**************************************************************************/ /**
  * @fn			void FreeRTOS_read(char* character)
+ * @param		*character	Stores the next character in the ring buffer
  * @brief		STUDENTS TO COMPLETE. This function block the thread unless we received a character. How can we do this?
                  There are multiple solutions! Check all the inter-thread communications available! See https://www.freertos.org/a00113.html
- * @details		STUDENTS TO COMPLETE.
+ * @details		This function attempts to take the uartSemaphore. Once acquired, it grabs the next character from the ring buffer and
+				stores it in *character.
  * @note
  *****************************************************************************/
 static void FreeRTOS_read(char *character)
@@ -240,7 +242,6 @@ static void FreeRTOS_read(char *character)
 		//vTaskSuspendAll();
         circular_buf_get(cbufRx, (uint8_t *)character);
 		//xTaskResumeAll();
-		// xSemaphoreGive(uartSemaphore);
     }
 }
 
@@ -267,8 +268,14 @@ BaseType_t CLI_ResetDevice(int8_t *pcWriteBuffer, size_t xWriteBufferLen, const 
     return pdFALSE;
 }
 
-// Example CLI Command. Resets system.
-BaseType_t xCliVersion(char *pcWriteBuffer,size_t xWriteBufferLen,const int8_t *pcCommandString)
+/**************************************************************************/ /**
+ * @fn			BaseType_t xCliVersion()
+ * @brief		Prints current version to console.
+ * @details		This function stores string in VERSION macro into a string that is printed
+				to the console.
+ * @note
+ *****************************************************************************/
+BaseType_t xCliVersion()
 {
 	char firmware_version[30];
 	
@@ -277,7 +284,15 @@ BaseType_t xCliVersion(char *pcWriteBuffer,size_t xWriteBufferLen,const int8_t *
 	return pdFALSE;
 }
 
-BaseType_t xCliTicks(char *pcWriteBuffer,size_t xWriteBufferLen,const int8_t *pcCommandString) {
+/**************************************************************************/ /**
+ * @fn			BaseType_t xCliTicks()
+ * @brief		Prints tick count since scheduler started.
+ * @details		This function grabs the current tick count and compares it with start_time
+				to get the number of ticks that passed. This number is stored into a string
+				that is printed to the console.
+ * @note
+ *****************************************************************************/
+BaseType_t xCliTicks() {
 	char ticks_string[50];
 	long ticks = xTaskGetTickCount() - start_time;
 	
