@@ -38,7 +38,7 @@ BaseType_t xCliClearTerminalScreen( char *pcWriteBuffer,size_t xWriteBufferLen,c
 #define CLI_CALLBACK_CLEAR_SCREEN		(pdCOMMAND_LINE_CALLBACK)xCliClearTerminalScreen
 #define CLI_PARAMS_CLEAR_SCREEN			0
 
-BaseType_t xCliVersion(char *pcWriteBuffer,size_t xWriteBufferLen,const int8_t *pcCommandString);
+BaseType_t xCliVersion();
 
 #define CLI_COMMAND_VERSION				"version"
 #define CLI_HELP_VERSION				"cls: Prints the firmware version\r\n"
@@ -46,7 +46,7 @@ BaseType_t xCliVersion(char *pcWriteBuffer,size_t xWriteBufferLen,const int8_t *
 #define CLI_PARAMS_VERSION				0
 #define VERSION							"0.0.1"
 
-BaseType_t xCliTicks(char *pcWriteBuffer,size_t xWriteBufferLen,const int8_t *pcCommandString);
+BaseType_t xCliTicks();
 
 #define CLI_COMMAND_TICKS				"ticks"
 #define CLI_HELP_TICKS					"cls: Prints number of ticks since scheduler started\r\n"
