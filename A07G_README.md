@@ -51,7 +51,7 @@ Additions in **bold**, deletions ~~crossed out~~.
 | ~~HRS-ST-03~~ | ~~The system should use a diode to prevent reverse current from the battery to the solar cell.~~ | |
 | HRS-ST-04 | The system shall use a stepper motor to actuate solar cells 360 degrees around the y-axis in 10 degree increments. It will be controlled using a driver. | |
 | HRS-ST-05 | The system shall use a servo motor to actuate solar cells 180 degrees around the z-axis in 10 degree increments. | |
-| HRS-ST-06 | The system shall use a potentiometer to vary the load in the solar tracking circuit, which will be used in the MPPT process. | |
+| HRS-ST-06| The system shall use a potentiometer to ~~vary the load in the solar tracking circuit, which will be used in the MPPT process.~~ **tune a MPPT IC** | |
 | HRS-ST-07 | The system shall use a MOSFET to complete the circuit from the solar cell to rechargeable battery after the ideal resistance is determined. | |
 
 **Wireless**
@@ -90,7 +90,7 @@ Additions in **bold**, deletions ~~crossed out~~.
 | SRS-ST-04 | The firmware shall determine the maximum ADC reading in the y-direction and fix the corresponding stepper postion. | |
 | SRS-ST-05 | The firmware shall determine the maximum ADC reading in the z-direction and fix the corresponding servo postion. | |
 | SRS-ST-06 | The system shall fix the orientation of the solar cell and use the Maximum Power Point Tracking (MPPT) technique to identify load value for optimal battery charging. | |
-| SRS-ST-07 | The system should compute the battery's state of charge. | |
+| ~~SRS-ST-07~~ | ~~The system should compute the battery's state of charge.~~ | |
 
 **Node-red UI**
 
