@@ -46,7 +46,7 @@ Additions in **bold**, deletions ~~crossed out~~.
 
 | # | Requirement specification | Status |
 | --------- | -------- | -------- |
-| ~~HRS-ST-01~~ | ~~The system shall incorporate a solar cell to collect and store energy into a rechargeable battery.~~ | |
+| HRS-ST-01 | The system shall incorporate a solar cell to collect and store energy into a rechargeable battery. | |
 | HRS-ST-02 | The system shall use an ADC to monitor the voltage of the solar cell. | |
 | ~~HRS-ST-03~~ | ~~The system should use a diode to prevent reverse current from the battery to the solar cell.~~ | |
 | HRS-ST-04 | The system shall use a stepper motor to actuate solar cells 360 degrees around the y-axis in 10 degree increments. It will be controlled using a driver. | |
