@@ -131,26 +131,23 @@ They are initalized as circular buffer pointers. This is initialized in SerialCo
 
 Ultimately, the data is being stored in a char array called rxCharacterBuffer and txCharacterBuffer which both have a size of 512 bytes. This data structure is passed to the circular buffer structure in circular_buf_init.
 
-4. Where are the interrupts for UART character received and UART character sent defined? 
+4. Where are the interrupts for UART character received and UART character sent defined?
 
 The interrupts are handeled usart_interrupt.c. The callback functions are implemented in SerialConsole.c as usart_write_callback() and usart_read_callback. They are linked through the usart_module type thats initialized as usart_instance in SerialConsole.c.
 
-
 5. What are the callback functions that are called when:
 
-- A character is received? (RX) 
-usart_read_callback()
+- A character is received? (RX): usart_read_callback()
 
-- A character has been sent? (TX) 
-usart_write_callback()
+- A character has been sent? (TX): usart_write_callback()
 
-6. Explain what is being done on each of these two callbacks and how they relate to the cbufRx and cbufTx buffers. 
+6. Explain what is being done on each of these two callbacks and how they relate to the cbufRx and cbufTx buffers.
 
-In the usart_write_callback() function, a single char is being passed from the cbufTx buffer to a data structure inside of the usart handling structure. In the usart_read_callback() function, the cbufRx buffer is linked to a data strcuture inside of the usart handling structure so that it can pass cbufRx the incoming data. 
+In the usart_write_callback() function, a single char is being passed from the cbufTx buffer to a data structure inside of the usart handling structure. In the usart_read_callback() function, the cbufRx buffer is linked to a data strcuture inside of the usart handling structure so that it can pass cbufRx the incoming data.
 
-7. Draw a diagram that explains the program flow for UART receive – starting with the user typing a character and ending with how that characters ends up in the circular buffer “cbufRx”. Please make reference to specific functions in the starter code. 
+7. Draw a diagram that explains the program flow for UART receive – starting with the user typing a character and ending with how that characters ends up in the circular buffer “cbufRx”. Please make reference to specific functions in the starter code.
 
-8. Draw a diagram that explains the program flow for the UART transmission – starting from a string added by the program to the circular buffer “cbufTx” and ending on characters being shown on the screen of a PC (On Teraterm, for example). Please make reference to specific functions in the starter code. 
+8. Draw a diagram that explains the program flow for the UART transmission – starting from a string added by the program to the circular buffer “cbufTx” and ending on characters being shown on the screen of a PC (On Teraterm, for example). Please make reference to specific functions in the starter code.
 
 9. What is done on the function “startStasks()” in main.c? How many threads are started?
 
@@ -192,7 +189,7 @@ usart_read_callback() in [this file](https://github.com/ese5160/final-project-a0
 
 ## 6. Add CLI commands
 
-### Video Link
+<video controls src="a07g_images/clip_video.mp4" title="Title"></video>
 
 ## 7. Using Percepio
 
