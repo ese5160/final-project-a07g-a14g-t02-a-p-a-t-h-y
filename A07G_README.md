@@ -209,5 +209,3 @@ Video [here](https://github.com/ese5160/final-project-a07g-a14g-t02-a-p-a-t-h-y/
 <video controls src="a07g_images/clip_video.mp4" title="Title"></video>
 
 ## 7. Using Percepio
-
-### Percepio Trace
