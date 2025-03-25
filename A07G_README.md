@@ -202,6 +202,10 @@ usart_read_callback() in [this file](https://github.com/ese5160/final-project-a0
 
 ## 6. Add CLI commands
 
+CLI commands (xCliVersion() and xCliTicks()) in [this file](https://github.com/ese5160/final-project-a07g-a14g-t02-a-p-a-t-h-y/blob/main/CLI%20Starter%20Code/src/CliThread/CliThread.c).
+
+Video [here](https://github.com/ese5160/final-project-a07g-a14g-t02-a-p-a-t-h-y/blob/main/a07g_images/clip_video.mp4).
+
 <video controls src="a07g_images/clip_video.mp4" title="Title"></video>
 
 ## 7. Using Percepio

@@ -83,12 +83,12 @@ int main(void)
 
 	 LogMessage(LOG_INFO_LVL, "ESE5160 CLI STARTER PROJECT STARTED\r\n");
 
-	 uartSemaphore = xSemaphoreCreateCounting(100, 0 );
+	 uartSemaphore = xSemaphoreCreateCounting(512, 0);
 
 	// Start FreeRTOS scheduler.
 	vTaskStartScheduler();
 	
-	//
+	// Get start time
 	start_time = xTaskGetTickCount();
 
 	while (1)
